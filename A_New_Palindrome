@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	ios::sync_with_stdio(false);
+	cin.tie(nullptr);
+	int T;cin>>T;
+	for(;T--;)
+	{
+		string s;cin>>s;
+		bool same=true;
+		for(int i=1;i<(int)s.size()-i-1;i++)if(s[0]!=s[i])same=false;
+		cout<<(same?"NO\n":"YES\n");
+	}
+}
